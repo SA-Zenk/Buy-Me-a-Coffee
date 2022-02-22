@@ -1,0 +1,235 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header {
+  /* padding-top: 120px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 14px 8px;
+  border-radius: 48px;
+}
+
+.header__info {
+  text-decoration: none;
+  padding: 8px;
+  color: rgba(34, 34, 34, 1);
+  font-size: 12px;
+  position: relative;
+}
+.header__info::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 0.7s ease;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.05);
+}
+.header__info:hover::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.header__register {
+  display: flex;
+}
+
+.header__login {
+  font-size: 16px;
+  color: rgba(34, 34, 34, 1);
+  text-decoration: none;
+  padding: 8px;
+  font-family: "Circular Bold";
+  transition: all 0.2s ease;
+  position: relative;
+  margin: 0px 4px;
+}
+.header__login::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 0.7s ease;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.05);
+}
+.header__login:hover::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.header__signup {
+  border-radius: 40px;
+  background-color: rgba(255, 221, 0, 1);
+  padding: 8px 16px;
+  display: block;
+  font-family: "Circular Bold";
+  text-decoration: none;
+  color: rgba(34, 34, 34, 1);
+  transition: all 0.7s ease;
+}
+.header__signup:hover {
+  transform: scaleX(1.021) scaleY(1.041) perspective(1px);
+}
+
+.hero {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero__info {
+  font-family: "Circular Bold";
+}
+
+.hero__followers {
+  line-height: 44px;
+  font-size: 30px;
+  text-align: center;
+  padding: 0px 11.344px 0px 11.328px;
+  margin: auto;
+}
+
+.hero__donation {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 16px;
+  color: #222222;
+  margin: auto;
+}
+
+.hero__firsbutton {
+  display: flex;
+  align-items: center;
+  padding: 0px 12px 0px 24px;
+  margin: 32px 0px 0px;
+  border: 2px solid;
+  border-radius: 40px;
+  height: 46px;
+  border-color: rgba(34, 34, 34, 0.05);
+}
+
+.hero__coffebuy {
+  font-family: "Circular Bold";
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.hero__input {
+  outline: none;
+  border: none;
+  width: 56px;
+  padding: 0;
+  font-size: 18px;
+  overflow: hidden;
+  color: rgba(34, 34, 34, 1);
+}
+
+.hero__start {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0px 0px;
+}
+
+.hero__button {
+  border-radius: 40px;
+  border: none;
+  background-color: #ffdd00;
+  height: 48px;
+  width: 272px;
+  font-size: 16px;
+  font-family: "Circular Bold";
+  transition: all 0.7s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #222222;
+}
+.hero__button:hover {
+  transform: scaleX(1.021) scaleY(1.041) perspective(1px);
+}
+
+.hero__sentence {
+  font-family: "Circular Bold";
+  padding-top: 24px;
+  font-size: 16px;
+  padding-bottom: 48px;
+}
+
+.slider {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 55px;
+  overflow-x: auto;
+}
+
+.slider__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.slider__team {
+  padding: 10px 16px;
+  font-family: "Circular Bold";
+  position: relative;
+  text-decoration: none;
+  color: rgba(34, 34, 34, 1);
+  white-space: nowrap;
+}
+.slider__team::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 0.7s ease;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.05);
+}
+.slider__team:hover::before {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slider__first {
+  margin: 0px 6px 0px 24px;
+}
+
+.slider::-webkit-scrollbar {
+  width: 0%;
+}
