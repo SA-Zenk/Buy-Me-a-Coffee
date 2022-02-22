@@ -233,3 +233,58 @@ header {
 .slider::-webkit-scrollbar {
   width: 0%;
 }
+
+.slider__cards {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-x: auto;
+}
+.slider__cards::-webkit-scrollbar {
+  width: 0%;
+}
+
+.slider__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 24px;
+  cursor: pointer;
+}
+
+.slider__card {
+  transition: 0.3s ease-in-out;
+}
+
+.slider__card:hover {
+  transform: scale(1.01);
+}
+
+.slider__img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+
+.slider__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slider__container-description {
+  text-decoration: none;
+  line-height: 22px;
+}
+
+.slider__span {
+  font-family: "Circular Bold";
+}
+
+.slider__supporters {
+  display: flex;
+}
