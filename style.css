@@ -254,11 +254,26 @@ header {
   cursor: pointer;
 }
 
+.slider__fixin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 24px;
+}
+
+.slider__content-block {
+  overflow: hidden;
+}
 
 .slider__img {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  transition: 0.5s;
+}
+
+.slider__content-block:hover .slider__img {
+  transform: scale(1.1);
 }
 
 .slider__info {
@@ -278,4 +293,70 @@ header {
 
 .slider__supporters {
   display: flex;
+}
+
+.donation-margin {
+  margin-top: 64px;
+  margin-bottom: 36px;
+}
+
+.donation-padding {
+  padding-top: 48px;
+  padding-bottom: 64px;
+  background-color: rgba(255, 252, 230, 1);
+}
+
+.donations {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.donations__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Circular Bold";
+}
+
+.donations__title {
+  letter-spacing: 2px;
+  color: rgba(113, 113, 113, 1);
+  text-transform: uppercase;
+}
+
+.donations__audience {
+  padding-top: 12px;
+  padding-right: 4px;
+  padding-left: 4px;
+  line-height: 44px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.dontaions__information {
+  padding-top: 24px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.donations__container-image {
+  padding-top: 48px;
+}
+
+.donations__img {
+  height: 100%;
+  width: 100%;
+}
+
+.donations__memberships {
+  padding-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Circular Bold";
 }
