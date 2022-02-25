@@ -8,9 +8,11 @@ header {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
+/********************/
+/* Header */
+/********************/
 .header {
-  /* padding-top: 120px; */
+  padding-top: 120px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -94,7 +96,12 @@ header {
 .header__signup:hover {
   transform: scaleX(1.021) scaleY(1.041) perspective(1px);
 }
-
+/********************/
+/*Header*/
+/********************/
+/********************/
+/* Hero*/
+/********************/
 .hero {
   padding-left: 24px;
   padding-right: 24px;
@@ -130,6 +137,7 @@ header {
   border-radius: 40px;
   height: 46px;
   border-color: rgba(34, 34, 34, 0.05);
+  box-shadow: 0 2.65546px 95px rgba(0, 0, 0, .05);
 }
 
 .hero__coffebuy {
@@ -179,6 +187,13 @@ header {
   font-size: 16px;
   padding-bottom: 48px;
 }
+/********************/
+/* Hero */
+/********************/
+
+/********************/
+/* Slider */
+/********************/
 
 .slider {
   position: relative;
@@ -295,6 +310,10 @@ header {
   display: flex;
 }
 
+/********************/
+/* Donations */
+/********************/
+
 .donation-margin {
   margin-top: 64px;
   margin-bottom: 36px;
@@ -339,6 +358,7 @@ header {
   line-height: 30px;
   font-size: 18px;
   text-align: center;
+  font-family: "Circular Regular";
 }
 
 .donations__container-image {
@@ -359,4 +379,105 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Circular Bold";
+}
+
+/********************/
+/* Rules */
+/********************/
+
+.rules-padding {
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 100%;
+}
+
+.rules {
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.rules__title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 30px;
+  line-height: 44px;
+  font-family: "Circular Black";
+}
+
+.rules__creator {
+  position: relative;
+  padding-left: 8px;
+}
+
+.rules__svg-line {
+  position: absolute;
+  width: 100%;
+  top: 32px;
+  left: 6px;
+}
+
+.rules-paddingtop {
+  padding-top: 64px;
+}
+
+.rules__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.rules__info {
+  line-height: 30px;
+  font-size: 18px;
+  font-family: "Circular Regular";
+  padding-top: 12px;
+  text-align: center;
+}
+
+.rules__font {
+  font-family: "Circular Bold";
+  display: flex;
+  justify-content: center;
+}
+
+.rules__span-inside {
+  font-family: "Circular Bold";
+}
+
+.rules__start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: #ffdd00;
+  border-radius: 40px;
+  transition: all 0.7s ease;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 48px;
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.rules__start:hover {
+  transform: scaleX(1.021) scaleY(1.041) perspective(1px);
+}
+
+.rules__span-page {
+  font-family: "Circular Bold";
+  color: #222222;
+}
+
+.rules__span-free {
+  font-family: "Circular Regular";
+  color: #222222;
+}
+
+.rules__sentence {
+  text-align: center;
+  padding-top: 16px;
+  font-family: "Circular Book";
 }
