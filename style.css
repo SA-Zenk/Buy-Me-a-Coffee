@@ -137,7 +137,7 @@ header {
   border-radius: 40px;
   height: 46px;
   border-color: rgba(34, 34, 34, 0.05);
-  box-shadow: 0 2.65546px 95px rgba(0, 0, 0, .05);
+  box-shadow: 0 2.65546px 95px rgba(0, 0, 0, 0.05);
 }
 
 .hero__coffebuy {
@@ -480,4 +480,60 @@ header {
   text-align: center;
   padding-top: 16px;
   font-family: "Circular Book";
+}
+
+.footer-top {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer-left {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  font-family: "Circular Medium";
+  padding-right: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer__svg {
+  padding-left: 5px;
+}
+
+.footer__more {
+  position: relative;
+}
+
+.footer__hidden {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+}
+
+.footer__ios {
+  display: flex;
+}
+
+.footer__android {
+  display: flex;
+}
+
+.footer__ios {
+  padding: 8px 18px;
+  font-family: "Circular Bold";
+}
+
+.footer__android {
+  padding: 8px 18px;
+  font-family: "Circular Bold";
 }
