@@ -609,3 +609,19 @@ header {
 	padding-top: 12px;
 	font-family: 'Circular Regular';
 }
+
+.screen__relative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background: #222222;
+  border-radius: 40px;
+  position: relative;
+}
+
+.screen__svg {
+  height: 16px;
+  width: 10.05px;
+}
