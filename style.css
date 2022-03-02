@@ -479,6 +479,7 @@ header {
 .rules__sentence {
   text-align: center;
   padding-top: 16px;
+  padding-bottom: 40px;
   font-family: "Circular Book";
 }
 
@@ -499,11 +500,20 @@ header {
 }
 
 .footer__link {
-  font-family: "Circular Medium";
+  font-family: "Circular Bold";
   padding-right: 16px;
   padding-bottom: 16px;
   text-decoration: none;
   color: #222222;
+}
+
+.footer__link:hover {
+  color: rgba(119, 119, 119, 1);
+}
+
+.footer__link:hover .footer__svg {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
 }
 
 .footer__svg {
@@ -513,11 +523,46 @@ header {
 .footer__more {
   position: relative;
 }
+.footer__more:hover .footer__hidden {
+  display: flex;
+  position: absolute;
+}
 
 .footer__hidden {
-  display: flex;
+  position: absolute;
+  display: none;
   flex-direction: column;
   padding: 8px 0px;
+  bottom: 52px;
+  left: -16px;
+  background: #fff;
+  box-shadow: 0 2.65546px 95px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+}
+
+.footer__hidden-resour {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 2.65546px 95px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 52px;
+  left: -4px;
+  padding: 8px 0px;
+  width: 200px;
+}
+
+.footer__more:hover .footer__hidden-resour {
+  display: flex;
+  position: absolute;
+}
+
+.footer__link-resour {
+  text-decoration: none;
+  color: #222222;
+  font-family: "Circular Bold";
+  padding: 8px 18px;
 }
 
 .footer__ios {
@@ -531,9 +576,36 @@ header {
 .footer__ios {
   padding: 8px 18px;
   font-family: "Circular Bold";
+  text-decoration: none;
+  color: #222222;
 }
 
 .footer__android {
   padding: 8px 18px;
   font-family: "Circular Bold";
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer__apps-svg {
+  padding-right: 8px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socialmedia {
+	padding-left: 16px;
+}
+
+.footer__svg-media {
+	height: 22px;
+}
+
+.footer__copy {
+	text-align: center;
+	padding-top: 12px;
+	font-family: 'Circular Regular';
 }
