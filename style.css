@@ -597,20 +597,24 @@ header {
 }
 
 .footer__socialmedia {
-	padding-left: 16px;
+  padding-left: 16px;
 }
 
 .footer__svg-media {
-	height: 22px;
+  height: 22px;
 }
 
 .footer__copy {
-	text-align: center;
-	padding-top: 12px;
-	font-family: 'Circular Regular';
+  text-align: center;
+  padding-top: 12px;
+  font-family: "Circular Regular";
 }
 
 .screen__relative {
+  position: relative;
+}
+
+.cuestion {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,10 +622,13 @@ header {
   width: 48px;
   background: #222222;
   border-radius: 40px;
-  position: relative;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
 }
 
-.screen__svg {
+.cuestion__svg {
   height: 16px;
   width: 10.05px;
+  position: absolute;
 }
