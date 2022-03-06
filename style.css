@@ -300,6 +300,7 @@ header {
 .slider__container-description {
   text-decoration: none;
   line-height: 22px;
+	font-size: 17px;
 }
 
 .slider__span {
@@ -598,6 +599,19 @@ header {
 
 .footer__socialmedia {
   padding-left: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__socialmedia:hover {
+  transform: scale(1.1);
+}
+
+.footer__socialmedia1 {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__socialmedia1:hover {
+  transform: scale(1.1);
 }
 
 .footer__svg-media {
@@ -617,7 +631,6 @@ header {
 .cuestion {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 48px;
   width: 48px;
   background: #222222;
@@ -625,10 +638,47 @@ header {
   position: fixed;
   bottom: 24px;
   right: 24px;
+  cursor: pointer;
+}
+
+.cuestion__container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cuestion__svg {
   height: 16px;
   width: 10.05px;
   position: absolute;
+}
+
+.cuestion__container-help {
+  position: absolute;
+  bottom: 64px;
+	right: 0;
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  padding: 24px 0px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 6px 12px -6px rgba(24, 39, 75, .12), 0 8px 24px -4px rgba(24, 39, 75, .08);
+}
+
+.cuestion:hover .cuestion__container-help {
+	display: flex;
+}
+
+.cuestion__link {
+  padding: 10px 24px;
+  text-decoration: none;
+  color: rgba(119, 119, 119, 1);
+  font-family: "Circular Medium";
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.cuestion__icon {
+	padding: 4px 12px 0px 0px
 }
