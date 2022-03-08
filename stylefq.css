@@ -149,3 +149,263 @@ header {
 .hero__link:hover {
   transform: scaleX(1.021) scaleY(1.041) perspective(1px);
 }
+
+.doubts-padding {
+  padding: 24px 16px 64px 16px;
+}
+
+.doubts__container {
+  position: relative;
+}
+
+.doubts__container:hover .doubts__line {
+  position: absolute;
+  top: 100px;
+}
+
+.doubts__title-conteiner {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  cursor: pointer;
+  position: relative;
+}
+
+.doubts__title-conteiner:hover .doubts__arrow {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+.doubts__title-conteiner:hover .doubts__info {
+  display: flex;
+  position: absolute;
+  top: 50px;
+}
+
+.doubts__title {
+  padding-right: 12px;
+  font-family: "Circular Bold";
+  font-size: 20px;
+}
+
+.doubts__arrow {
+  display: flex;
+  align-items: center;
+}
+
+.doubts__info {
+  font-size: 18px;
+  font-family: "Circular Regular";
+  padding-bottom: 16px;
+  margin: 0;
+  display: none;
+  position: absolute;
+}
+
+.doubts__line {
+  background-color: rgba(34, 34, 34, 0.09);
+  width: 100%;
+  height: 1px;
+  position: absolute;
+}
+
+
+
+.footer-top {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer-left {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  font-family: "Circular Bold";
+  padding-right: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer__link:hover {
+  color: rgba(119, 119, 119, 1);
+}
+
+.footer__link:hover .footer__svg {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+.footer__svg {
+  padding-left: 5px;
+}
+
+.footer__more {
+  position: relative;
+}
+.footer__more:hover .footer__hidden {
+  display: flex;
+  position: absolute;
+}
+
+.footer__hidden {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  padding: 8px 0px;
+  bottom: 52px;
+  left: -16px;
+  background: #fff;
+  box-shadow: 0 2.65546px 95px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+}
+
+.footer__hidden-resour {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 2.65546px 95px rgb(0 0 0 / 5%);
+  border-radius: 8px;
+  position: absolute;
+  bottom: 52px;
+  left: -4px;
+  padding: 8px 0px;
+  width: 200px;
+}
+
+.footer__more:hover .footer__hidden-resour {
+  display: flex;
+  position: absolute;
+}
+
+.footer__link-resour {
+  text-decoration: none;
+  color: #222222;
+  font-family: "Circular Bold";
+  padding: 8px 18px;
+}
+
+.footer__ios {
+  display: flex;
+}
+
+.footer__android {
+  display: flex;
+}
+
+.footer__ios {
+  padding: 8px 18px;
+  font-family: "Circular Bold";
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer__android {
+  padding: 8px 18px;
+  font-family: "Circular Bold";
+  text-decoration: none;
+  color: #222222;
+}
+
+.footer__apps-svg {
+  padding-right: 8px;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__socialmedia {
+  padding-left: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__socialmedia:hover {
+  transform: scale(1.1);
+}
+
+.footer__socialmedia1 {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__socialmedia1:hover {
+  transform: scale(1.1);
+}
+
+.footer__svg-media {
+  height: 22px;
+}
+
+.footer__copy {
+  text-align: center;
+  padding-top: 12px;
+  font-family: "Circular Regular";
+}
+
+.screen__relative {
+  position: relative;
+}
+
+.cuestion {
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background: #222222;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.cuestion__container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuestion__svg {
+  height: 16px;
+  width: 10.05px;
+  position: absolute;
+}
+
+.cuestion__container-help {
+  position: absolute;
+  bottom: 64px;
+	right: 0;
+  display: none;
+  flex-direction: column;
+  width: 250px;
+  padding: 24px 0px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 0 6px 12px -6px rgba(24, 39, 75, .12), 0 8px 24px -4px rgba(24, 39, 75, .08);
+}
+
+.cuestion:hover .cuestion__container-help {
+	display: flex;
+}
+
+.cuestion__link {
+  padding: 10px 24px;
+  text-decoration: none;
+  color: rgba(119, 119, 119, 1);
+  font-family: "Circular Medium";
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.cuestion__icon {
+	padding: 4px 12px 0px 0px
+}
