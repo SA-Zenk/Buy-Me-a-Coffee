@@ -15,9 +15,14 @@ header {
   padding-top: 120px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 14px 8px;
   border-radius: 48px;
+}
+
+.header__others {
+  display: flex;
+  align-items: center;
 }
 
 .header__info {
