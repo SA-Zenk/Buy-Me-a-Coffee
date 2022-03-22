@@ -185,12 +185,12 @@ header {
 .creator__img:hover {
   transform: scaleX(1.05) scaleY(1.05);
   transition-duration: 300ms;
-  object-fit: cover;
 }
 
 .creator__conteiner-img {
   height: 200px;
   width: 200px;
+  overflow: hidden;
 }
 
 .creator__img {
