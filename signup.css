@@ -80,6 +80,10 @@ main {
   width: 13rem;
 }
 
+.hero__container-inputpass {
+  margin-top: 16px;
+}
+
 .hero__container-register {
   position: relative;
   background: #fd0;
@@ -190,6 +194,16 @@ main {
   color: #000;
   font-family: "Circular Bold";
   font-size: 16px;
+}
+
+.privacy {
+  padding-top: 16px;
+	padding-bottom: 26px;
+}
+
+.privacy__text {
+  margin: 0;
+	text-align: center;
 }
 
 .cuestion {
