@@ -102,7 +102,7 @@ header {
 @media (max-width: 374px) {
   .header__info {
     font-size: 12px;
-		font-family: inherit;
+    font-family: inherit;
   }
 }
 .header__info::before {
@@ -274,12 +274,12 @@ header {
   font-weight: 800;
   font-size: 18px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
   .hero__coffebuy {
     font-size: 24px;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 480px) {
   .hero__coffebuy {
     font-size: 18px;
   }
@@ -292,12 +292,12 @@ header {
   overflow: hidden;
   color: rgba(34, 34, 34, 1);
 }
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
   .hero__input {
     font-size: 24px;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   .hero__input {
     font-size: 18px;
   }
@@ -348,6 +348,23 @@ header {
 /* Slider */
 /********************/
 
+.container__slide-creat {
+  
+}
+@media (max-width: 1500px) {
+    .container__slide-creat {
+      padding-right: 48px;
+      padding-left: 48px;
+      padding-top: 96px;
+    }
+  }
+  @media (max-width: 700px) {
+    .container__slide-creat {
+      padding-right: inherit;
+      padding-left: inherit;
+      padding-top: inherit;
+    }
+  }
 .slider {
   position: relative;
   left: 0;
@@ -355,6 +372,18 @@ header {
   height: 58px;
   overflow-x: auto;
 }
+@media (max-width: 1500px) {
+    .slider {
+      width: 1012px;
+      margin: auto;
+    }
+  }
+  @media (max-width: 1024px) {
+    .slider {
+      width: 850px;
+      margin: auto;
+    }
+  }
 
 .slider__container {
   position: absolute;
@@ -364,6 +393,11 @@ header {
   justify-items: center;
   grid-template-columns: repeat(8, 1fr);
 }
+@media (max-width: 1500px) {
+    .slider__container {
+      grid-template-columns: repeat(8, 120px);
+    }
+  }
 
 .slider__team {
   padding: 10px 16px;
