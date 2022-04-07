@@ -1,3 +1,20 @@
+/*----------------------------------------------------
+
+Table of Content
+
+-Globals
+-Header
+-Hero
+-Doubts
+-Footer
+-Cuestion
+
+
+---------------------------------------------------- */
+
+/********************/
+/* Globals */
+/********************/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -101,10 +118,10 @@ header {
 .header__signup:hover {
   transform: scaleX(1.021) scaleY(1.041) perspective(1px);
 }
-/********************/
-/*Header*/
-/********************/
 
+/********************/
+/* Hero */
+/********************/
 .hero {
   padding: 0px 16px 24px 16px;
   background-color: rgba(255, 252, 230, 1);
@@ -150,6 +167,9 @@ header {
   transform: scaleX(1.021) scaleY(1.041) perspective(1px);
 }
 
+/********************/
+/* Doubts */
+/********************/
 .doubts-padding {
   padding: 24px 16px 64px 16px;
 }
@@ -223,6 +243,9 @@ header {
   background-color: rgba(255, 221, 0, 1);
 }
 
+/********************/
+/* Footer */
+/********************/
 .footer-top {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -366,7 +389,9 @@ header {
 .screen__relative {
   position: relative;
 }
-
+/********************/
+/* Cuestion */
+/********************/
 .cuestion {
   display: flex;
   justify-content: center;

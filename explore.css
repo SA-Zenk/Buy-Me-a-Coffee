@@ -1,3 +1,20 @@
+/*----------------------------------------------------
+
+Table of Content
+
+-Globals
+-Header
+-Hero
+-Creator
+-Footer
+-Cuestion
+
+
+---------------------------------------------------- */
+
+/********************/
+/* Globals */
+/********************/
 body {
   box-sizing: border-box;
   margin: 0;
@@ -101,10 +118,10 @@ header {
 .header__signup:hover {
   transform: scaleX(1.021) scaleY(1.041) perspective(1px);
 }
-/********************/
-/*Header*/
-/********************/
 
+/********************/
+/*Hero*/
+/********************/
 .hero {
   padding: 0px 16px;
   text-align: center;
@@ -140,6 +157,10 @@ header {
   font-family: "Circular Regular";
 }
 
+
+/********************/
+/* Creator */
+/********************/
 .creators-paddbot {
   padding-bottom: 48px;
 }
@@ -236,8 +257,9 @@ header {
   font-size: 16px;
 }
 
+/********************/
 /* Footer */
-
+/********************/
 .footer-top {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -382,6 +404,9 @@ header {
   position: relative;
 }
 
+/********************/
+/* Cuestion */
+/********************/
 .cuestion {
   display: flex;
   justify-content: center;

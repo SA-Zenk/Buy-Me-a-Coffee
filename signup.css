@@ -1,3 +1,18 @@
+/*----------------------------------------------------
+
+Table of Content
+
+-Globals
+-Header
+-Hero
+-login
+-social
+-privacy
+-Cuestion
+
+
+---------------------------------------------------- */
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -62,6 +77,10 @@ main {
   padding: 0 32px;
 }
 
+
+/********************/
+/* Hero */
+/********************/
 .hero-title {
   text-align: center;
   font-size: 30px;
@@ -126,6 +145,10 @@ main {
   z-index: 11;
 }
 
+
+/********************/
+/* Login */
+/********************/
 .login {
   padding: 32px 0px;
   text-align: center;
@@ -153,6 +176,10 @@ main {
   top: calc(50% - 1px);
 }
 
+
+/********************/
+/* Social */
+/********************/
 .social {
   display: flex;
   flex-direction: column;
@@ -196,6 +223,10 @@ main {
   font-size: 16px;
 }
 
+
+/********************/
+/* Privacy */
+/********************/
 .privacy {
   padding-top: 16px;
 	padding-bottom: 26px;
@@ -206,6 +237,10 @@ main {
 	text-align: center;
 }
 
+
+/********************/
+/* Cuestion */
+/********************/
 .cuestion {
   display: flex;
   justify-content: center;
