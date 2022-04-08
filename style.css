@@ -530,6 +530,7 @@ header {
 /********************/
 
 .container__slide-creat {
+  display: block;
 }
 @media (max-width: 1500px) {
   .container__slide-creat {
@@ -630,8 +631,18 @@ Creator
   display: grid;
   justify-items: center;
   align-items: start;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 273px);
   overflow-x: auto;
+}
+@media (max-width: 1500px) {
+  .creators__video-cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .creators__video-cards {
+    justify-content: initial;
+  }
 }
 
 .creators__video-cards::-webkit-scrollbar {
@@ -826,6 +837,16 @@ Creator
   padding-top: 12px;
   text-align: center;
 }
+@media (max-width: 1500px) {
+  .rules__info {
+    font-size: 22px;
+  }
+}
+@media (max-width: 700px) {
+  .rules__info {
+    font-size: 18px;
+  }
+}
 
 .rules__font {
   font-family: "Circular Bold";
@@ -891,6 +912,17 @@ Footer
   .footer-left {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    display: block;
   }
 }
 
@@ -997,6 +1029,24 @@ Footer
   justify-content: center;
 }
 
+.footer__social {
+}
+@media (max-width: 1500px) {
+  .footer__social {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: initial;
+  }
+}
+
 .footer__socialmedia {
   padding-left: 16px;
   transition: all 0.2s ease-in-out;
@@ -1017,11 +1067,43 @@ Footer
 .footer__svg-media {
   height: 22px;
 }
+@media (max-width: 1500px) {
+  .footer__svg-media {
+    height: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__svg-media {
+    height: 22px;
+  }
+}
 
 .footer__copy {
   text-align: center;
   padding-top: 12px;
   font-family: "Circular Regular";
+}
+
+@media (max-width: 1500px) {
+  .footer__copy {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .footer__copy {
+    display: initial;
+    text-align: center;
+  }
+}
+
+.footer__copy--media {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .footer__copy--media {
+    display: none;
+  }
 }
 
 .screen__relative {
@@ -1043,6 +1125,27 @@ Cuestion
   bottom: 24px;
   right: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .cuestion {
+    bottom: 57px;
+    right: 175px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cuestion {
+    bottom: 57px;
+    right: 125px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cuestion {
+    bottom: 24px;
+    right: 24px;
+  }
 }
 
 .cuestion__container-img {
