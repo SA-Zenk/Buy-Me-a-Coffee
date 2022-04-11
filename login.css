@@ -12,7 +12,6 @@ Table of Content
 
 ---------------------------------------------------- */
 
-
 /********************/
 /* Globals */
 /********************/
@@ -33,6 +32,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+}
+
+@media (max-width: 1500px) {
+  .header {
+    padding: 0px 64px;
+    border-bottom: none;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 0px 16px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.05);
+  }
 }
 
 .header__svg {
@@ -80,10 +92,16 @@ main {
   padding: 0 32px;
 }
 
-
 /********************/
 /* Hero */
 /********************/
+
+.container-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
   text-align: center;
   font-size: 30px;
@@ -93,6 +111,24 @@ main {
 
 .hero {
   padding-top: 32px;
+}
+
+@media (max-width: 1500px) {
+  .hero {
+    width: 380px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    width: 445px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: initial;
+  }
 }
 
 .hero__input {
@@ -144,7 +180,6 @@ main {
   z-index: 11;
 }
 
-
 /********************/
 /* login */
 /********************/
@@ -174,8 +209,6 @@ main {
   right: 0;
   top: calc(50% - 1px);
 }
-
-
 
 /********************/
 /* Social */
