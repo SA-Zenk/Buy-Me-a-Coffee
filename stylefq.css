@@ -374,6 +374,24 @@ header {
 /********************/
 /* Doubts */
 /********************/
+
+.doubts {
+  display: block;
+}
+@media (max-width: 1500px) {
+  .doubts {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .doubts {
+    display: initial;
+  }
+}
+
 .doubts-padding {
   padding: 24px 16px 64px 16px;
 }
@@ -416,6 +434,7 @@ header {
   font-size: 18px;
   font-family: "Circular Regular";
   padding-bottom: 16px;
+  padding-top: 16px;
   margin: 0;
   display: none;
 }
@@ -497,11 +516,12 @@ header {
 
 .footer__link:hover .footer__svg {
   transform: rotate(180deg);
-  transition: all 0.2s ease;
+  
 }
 
 .footer__svg {
-  padding-left: 5px;
+  margin-left: 5px;
+  transition: all 0.2s ease;
 }
 
 .footer__more {

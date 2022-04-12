@@ -510,7 +510,7 @@ header {
 
 .hero__sentence {
   font-family: "Circular Bold";
-  padding-top: 24px;
+  padding-top: 15px;
   font-size: 16px;
   padding-bottom: 48px;
   text-align: center;
@@ -536,7 +536,7 @@ header {
   .container__slide-creat {
     padding-right: 48px;
     padding-left: 48px;
-    padding-top: 96px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 700px) {
@@ -576,9 +576,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(8, 1fr);
+  display: flex;
+  gap: 10px;
 }
 @media (max-width: 1500px) {
   .slider__container {
@@ -617,6 +616,16 @@ header {
 
 .slider__first {
   margin: 0px 6px 0px 24px;
+}
+@media (max-width: 1500px) {
+  .slider__first  {
+    margin: 0;
+  }
+}
+@media (max-width: 700px) {
+  .slider__first  {
+    margin: 0px 6px 0px 24px;
+  }
 }
 
 .slider::-webkit-scrollbar {
@@ -946,11 +955,12 @@ Footer
 
 .footer__link:hover .footer__svg {
   transform: rotate(180deg);
-  transition: all 0.2s ease;
+  
 }
 
 .footer__svg {
-  padding-left: 5px;
+  margin-left: 5px;
+  transition: all 0.2s ease;
 }
 
 .footer__more {
@@ -1030,6 +1040,7 @@ Footer
 }
 
 .footer__social {
+  display: block;
 }
 @media (max-width: 1500px) {
   .footer__social {

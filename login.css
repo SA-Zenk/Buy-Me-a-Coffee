@@ -15,7 +15,7 @@ Table of Content
 /********************/
 /* Globals */
 /********************/
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -44,6 +44,20 @@ body {
   .header {
     padding: 0px 16px;
     border-bottom: 1px solid rgba(33, 33, 33, 0.05);
+  }
+}
+.header__register {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__span {
+  font-family: sans-serif;
+}
+@media (max-width: 700px) {
+  .header__span {
+    display: none;
   }
 }
 
@@ -100,6 +114,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 24px;
 }
 
 .hero-title {
@@ -127,7 +142,7 @@ main {
 
 @media (max-width: 480px) {
   .hero {
-    width: initial;
+    width: 100%;
   }
 }
 
@@ -135,7 +150,7 @@ main {
   border: 2px solid #222;
   border-radius: 8px;
   padding: 14px 16px;
-  width: 13rem;
+  width: 100%;
 }
 
 .hero__container-register {
@@ -188,6 +203,7 @@ main {
   text-align: center;
   font-size: 16px;
   position: relative;
+  font-family: sans-serif;
 }
 
 .login::before {
@@ -195,9 +211,32 @@ main {
   content: "";
   background-color: rgba(34, 34, 34, 0.1);
   height: 2px;
-  width: 84px;
-  left: 0;
+  width: 114px;
+  left: 106px;
   top: calc(50% - 1px);
+}
+
+@media (max-width: 1500px) {
+  .login::before {
+    width: 114px;
+  }
+}
+@media (max-width: 700px) {
+  .login::before {
+    width: 133px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login::before {
+    width: 124px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login::before {
+    width: 88px;
+  }
 }
 
 .login::after {
@@ -205,9 +244,32 @@ main {
   content: "";
   background-color: rgba(34, 34, 34, 0.1);
   height: 2px;
-  width: 84px;
-  right: 0;
+  width: 114px;
+  right: 102px;
   top: calc(50% - 1px);
+}
+
+@media (max-width: 1500px) {
+  .login::after {
+    width: 114px;
+  }
+}
+@media (max-width: 700px) {
+  .login::after {
+    width: 133px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login::after {
+    width: 124px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login::after {
+    width: 88px;
+  }
 }
 
 /********************/
@@ -218,6 +280,26 @@ main {
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 1500px) {
+  .social {
+    width: 380px;
+  }
+}
+@media (max-width: 700px) {
+  .social {
+    width: 445px;
+  }
+}
+@media (max-width: 480px) {
+  .social {
+    width: 416px;
+  }
+}
+@media (max-width: 360px) {
+  .social {
+    width: 296px;
+  }
+}
 
 .social__link {
   text-decoration: none;
@@ -226,6 +308,7 @@ main {
   align-items: center;
   height: 48px;
   position: relative;
+  justify-content: center;
 }
 
 .social__link::before {
@@ -247,7 +330,11 @@ main {
 .social__svg {
   height: 30px;
   width: 24px;
-  padding-right: 16px;
+  margin-right: 16px;
+}
+
+.social_svg-pad {
+  margin-left: 12px;
 }
 
 .social__span {
